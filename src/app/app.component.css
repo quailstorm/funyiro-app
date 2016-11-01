@@ -45,55 +45,6 @@
     width: 100%
 }
 
-@media only screen and (min-width: 480px) {
-    /* a súly, vágószélesség, teljesítmény, kép nem jelenik meg */
-    .images_onsite, .cutting_width, .power_HP, .weight_kg {display: none;}
-    .brand_of_item, .type {display: table-cell;}
-}
-
-@media only screen and (min-width: 560px) {
-    /* a súly, vágószélesség, teljesítmény nem jelenik meg */
-    .images_onsite, .brand_of_item, .type {display: table-cell;}
-    .cutting_width, .power_HP, .weight_kg {display: none;}
-}
-
-@media only screen and (min-width: 650px) {
-    /* a súly, vágószélesség nem jelenik meg */
-    .images_onsite, .power_HP, .brand_of_item, .type {display: table-cell;}
-    .cutting_width, .weight_kg {display: none;}
-}
-
-@media only screen and (min-width: 775px) {
-    /* a súly nem jelenik meg */
-    .images_onsite, .power_HP, .cutting_width, .brand_of_item, .type {display: table-cell;}
-    .weight_kg {display: none;}
-}
-
-@media only screen and (min-width: 840px) {
-    /* a súly, vágószélesség nem jelenik meg */
-    .images_onsite, .power_HP, .brand_of_item, .type {display: table-cell;}
-    .cutting_width, .weight_kg {display: none;}
-    .title {margin-right: 24px;}
-}
-
-@media only screen and (min-width: 1024px) {
-    /* a súly nem jelenik meg */
-    .images_onsite, .power_HP, .cutting_width, .brand_of_item, .type {display: table-cell;}
-    .weight_kg {display: none;}
-    .title {margin-right: 24px;}
-}
-
-@media only screen and (min-width: 1140px) {
-    /* minden elem megjelenik */
-    .images_onsite, .weight_kg, .power_HP, .cutting_width, .brand_of_item, .type {display: table-cell;}
-    .title {margin-right: 24px;}
-}
-
-
-
-
-
-
 
 .selected {
       background-color: #CFD8DC !important;

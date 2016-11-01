@@ -12,13 +12,13 @@
 			</thead>
 			<tbody>
 				<tr *ngFor="let mower of mowers" [class.selected]="mower === selectedMower" (click)="onSelect(mower)">
-					<td>{{mower.image_of}}</td>
-          <td>{{mower.brandof_mower}}</td>
-					<td>{{mower.name}}</td>
-          <td>{{mower.typeof_mower}}</td>
-          <td>{{mower.cutting_width_cm}}</td>
-          <td>{{mower.performance_in_hp}}</td>
-          <td>{{mower.weight_in_kg}}</td>
+					<td class="images_onsite">{{mower.image_of}}</td>
+          <td class="brand_of_item">{{mower.brandof_mower}}</td>
+					<td class="name_of_item">{{mower.name}}</td>
+          <td class="type_of_item">{{mower.typeof_mower}}</td>
+          <td class="cutting_width">{{mower.cutting_width_cm}}</td>
+          <td class="power_HP">{{mower.performance_in_hp}}</td>
+          <td class="weight_kg">{{mower.weight_in_kg}}</td>
 				</tr>
 			</tbody>
 		</table>
