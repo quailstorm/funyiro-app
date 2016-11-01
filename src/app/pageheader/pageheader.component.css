@@ -1,0 +1,25 @@
+.headerText {
+  text-align: center;
+  font-size: x-large;
+  line-height: 200%;
+}
+
+.appName {
+  text-align: center;
+  font-size: xx-large;
+  line-height: 200%;
+  text-shadow:2px 1px 5px rgba(0,0,0,0.4);
+  font-weight:normal;
+  font-style:oblique;
+  color:#53B0E6;
+  letter-spacing:4pt;
+  word-spacing:2pt;
+  font-family:times new roman, times, serif;
+}
+
+@media only screen and (min-width: 840px) {
+    .title {
+        margin-right: 24px;
+        width: calc(100% - 16px);
+        }
+}

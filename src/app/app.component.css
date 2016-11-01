@@ -29,50 +29,116 @@
   margin: 5px;
 }
 
-.kep, .vagoszelesseg, .teljesitmeny, .suly, .marka {
+.images_onsite, .cutting_width, .power_HP, .weight_kg, .brand_of_item {
   display: none;
+}
+
+.oldfooter {
+    text-align: center
+}
+
+.pad-to-15px {
+    padding: 15px
+}
+
+.width-to-100percent {
+    width: 100%
 }
 
 @media only screen and (min-width: 480px) {
     /* a súly, vágószélesség, teljesítmény, kép nem jelenik meg */
-    .kep, .vagoszelesseg, .teljesitmeny, .suly {display: none;}
-    .marka, .tipus {display: table-cell;}
+    .images_onsite, .cutting_width, .power_HP, .weight_kg {display: none;}
+    .brand_of_item, .type {display: table-cell;}
 }
 
 @media only screen and (min-width: 560px) {
     /* a súly, vágószélesség, teljesítmény nem jelenik meg */
-    .kep, .marka, .tipus {display: table-cell;}
-    .vagoszelesseg, .teljesitmeny, .suly {display: none;}
+    .images_onsite, .brand_of_item, .type {display: table-cell;}
+    .cutting_width, .power_HP, .weight_kg {display: none;}
 }
 
 @media only screen and (min-width: 650px) {
     /* a súly, vágószélesség nem jelenik meg */
-    .kep, .teljesitmeny, .marka, .tipus {display: table-cell;}
-    .vagoszelesseg, .suly {display: none;}
+    .images_onsite, .power_HP, .brand_of_item, .type {display: table-cell;}
+    .cutting_width, .weight_kg {display: none;}
 }
 
 @media only screen and (min-width: 775px) {
     /* a súly nem jelenik meg */
-    .kep, .teljesitmeny, .vagoszelesseg, .marka, .tipus {display: table-cell;}
-    .suly {display: none;}
+    .images_onsite, .power_HP, .cutting_width, .brand_of_item, .type {display: table-cell;}
+    .weight_kg {display: none;}
 }
 
 @media only screen and (min-width: 840px) {
     /* a súly, vágószélesség nem jelenik meg */
-    .kep, .teljesitmeny, .marka, .tipus {display: table-cell;}
-    .vagoszelesseg, .suly {display: none;}
+    .images_onsite, .power_HP, .brand_of_item, .type {display: table-cell;}
+    .cutting_width, .weight_kg {display: none;}
     .title {margin-right: 24px;}
 }
 
 @media only screen and (min-width: 1024px) {
     /* a súly nem jelenik meg */
-    .kep, .teljesitmeny, .vagoszelesseg, .marka, .tipus {display: table-cell;}
-    .suly {display: none;}
+    .images_onsite, .power_HP, .cutting_width, .brand_of_item, .type {display: table-cell;}
+    .weight_kg {display: none;}
     .title {margin-right: 24px;}
 }
 
 @media only screen and (min-width: 1140px) {
     /* minden elem megjelenik */
-    .kep, .suly, .teljesitmeny, .vagoszelesseg, .marka, .tipus {display: table-cell;}
+    .images_onsite, .weight_kg, .power_HP, .cutting_width, .brand_of_item, .type {display: table-cell;}
     .title {margin-right: 24px;}
 }
+
+
+
+
+
+
+
+.selected {
+      background-color: #CFD8DC !important;
+      color: white;
+    }
+    .mowers {
+      margin: 0 0 2em 0;
+      list-style-type: none;
+      padding: 0;
+      width: 15em;
+    }
+    .mowers li {
+      cursor: pointer;
+      position: relative;
+      left: 0;
+      background-color: #EEE;
+      margin: .5em;
+      padding: .3em 0;
+      height: 1.6em;
+      border-radius: 4px;
+    }
+    .mowers li.selected:hover {
+      background-color: #BBD8DC !important;
+      color: white;
+    }
+    .mowers li:hover {
+      color: #607D8B;
+      background-color: #DDD;
+      left: .1em;
+    }
+    .mowers .text {
+      position: relative;
+      top: -3px;
+    }
+    .mowers .badge {
+      display: inline-block;
+      font-size: small;
+      color: white;
+      padding: 0.8em 0.7em 0 0.7em;
+      background-color: #607D8B;
+      line-height: 1em;
+      position: relative;
+      left: -1px;
+      top: -4px;
+      height: 1.8em;
+      margin-right: .8em;
+      border-radius: 4px 0 0 4px;
+    }

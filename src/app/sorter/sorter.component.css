@@ -1,0 +1,19 @@
+.mdl-checkbox {
+  margin: 3px;
+}
+
+.mdl-radio {
+  margin: 4px;
+}
+
+.mdl-switch {
+  margin: 5px;
+}
+
+.pad-to-15px {
+    padding: 15px
+}
+
+.width-to-100percent {
+    width: 100%
+}

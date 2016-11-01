@@ -1,173 +1,19 @@
 <div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp title">
-    <div class="headerText">Keress a fűnyíróid között a <br></div>
-    <p class="appName"> Fűnyíró Katalógus </p> <br>
-    <div class="headerText">segítségével <br></div>
-    
-  </div>
-  <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp" style="padding: 15px;">
-    <div class="text-1">Szűrők</div>
 
-    <form>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="textFieldSearch">
-          <i class="material-icons">search</i>
-        </label>
-        <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" id="textFieldSearch">
-          <label class="mdl-textfield__label" for="textFieldSearch">Keresés</label>
-        </div>
-      </div>
-    </form>
+	<app-pageheader class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp"></app-pageheader>
 
-    <!-- TÍPUS -->
-    <div class="text-2">Típus</div>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_kezi_benzines">
-        <input type="checkbox" id="type_kezi_benzines" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Benzines (kézi)</span>
-      </label>
+	<app-filter class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp pad-to-15px"></app-filter>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_kezi_elektromos">
-        <input type="checkbox" id="type_kezi_elektromos" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Elektromos (kézi)</span>
-      </label>
+	<div class="mdl-cell mdl-cell--9-col">
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_fukassza">
-        <input type="checkbox" id="type_fukassza" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Fűkasza</span>
-      </label>
+		<app-sorter class="mdl-cell--no-spacing mdl-cell--12-col mdl-card mdl-shadow--2dp pad-to-15px width-to-100percent"></app-sorter>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_traktor">
-        <input type="checkbox" id="type_traktor" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Fűnyíró traktor</span>
-      </label>
+		<br>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_robot">
-        <input type="checkbox" id="type_robot" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Fűnyíró robot</span>
-      </label>
+		<app-itemstable class="mdl-cell--no-spacing mdl-cell--12-col"></app-itemstable>
 
-    <!-- MÁRKA -->
-    <div class="text-2">Márka</div>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="marka_1">
-        <input type="checkbox" id="marka_1" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 1</span>
-      </label>
+	</div>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="marka_2">
-        <input type="checkbox" id="marka_2" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 2</span>
-      </label>
+	<app-oldfooter class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp oldfooter"></app-oldfooter>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="marka_3">
-        <input type="checkbox" id="marka_3" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 3</span>
-      </label>
-
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="marka_4">
-        <input type="checkbox" id="marka_4" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 4</span>
-      </label>
-
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="marka_5">
-        <input type="checkbox" id="marka_5" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 5</span>
-      </label>
-
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="marka_6">
-        <input type="checkbox" id="marka_6" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 6</span>
-      </label>
-
-    <!-- VÁGÓSZÉLESSÉG -->
-    <div class="text-2">Vágószélesség</div>
-      <span class="mdl-checkbox__label">Min: 0</span>
-      <input id="vagoSzelesseg" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
-
-    <!-- TELJESÍTMÉNY -->
-    <div class="text-2">Teljesítmény</div>
-      <span class="mdl-checkbox__label">Min: 0</span>
-      <input id="vagoSzelesseg" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
-
-    <!-- SÚLY -->
-    <div class="text-2">Súly</div>
-      <span class="mdl-checkbox__label">Min: 0</span>
-      <input id="vagoSzelesseg" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
-
-    <br>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
-      Szűrés
-    </button>
-  </div>
-  <div class="mdl-cell mdl-cell--9-col">
-    <div class="mdl-cell--no-spacing mdl-cell--12-col mdl-card mdl-shadow--2dp" style="padding: 15px;">
-      
-      <div class="text-2">Rendezés</div>
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rendezes-1">
-        <input type="radio" id="rendezes-1" class="mdl-radio__button" name="rendezes" value="1" checked>
-        <span class="mdl-radio__label">Név</span>
-      </label>
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rendezes-2">
-        <input type="radio" id="rendezes-2" class="mdl-radio__button" name="rendezes" value="2">
-        <span class="mdl-radio__label">Teljesítmény</span>
-      </label>
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rendezes-3">
-        <input type="radio" id="rendezes-3" class="mdl-radio__button" name="rendezes" value="3">
-        <span class="mdl-radio__label">Súly</span>
-      </label>
-      <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
-        <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
-        <span class="mdl-switch__label">Növekvő sorrend</span>
-      </label>
-    </div>
-    <br>
-    <div class="mdl-cell--no-spacing mdl-cell--12-col">
-      <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width: 100%">
-        <thead>
-          <tr>
-            <th class="kep">Kép</th>
-            <th class="nev">Név</th>
-            <th class="tipus">Típus</th>
-            <th class="marka">Márka</th>
-            <th class="vagoszelesseg">Vágószélesség</th>
-            <th class="teljesitmeny">Teljesítmény</th>
-            <th class="suly">Súly</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kep">...</td>
-            <td class="nev">Mágikus fűnyíró</td>
-            <td class="tipus">Fűkassza</td>
-            <td class="marka">Fűnyíró kft.</td>
-            <td class="vagoszelesseg">120 cm</td>
-            <td class="teljesitmeny">500 W</td>
-            <td class="suly">20 kg</td>
-          </tr>
-          <tr>
-            <td class="kep">...</td>
-            <td class="nev">Egyszerű fűnyíró</td>
-            <td class="tipus">Fűnyíró robot</td>
-            <td class="marka">Fűnyíró kft.</td>
-            <td class="vagoszelesseg">420 cm</td>
-            <td class="teljesitmeny">1000 W</td>
-            <td class="suly">100 kg</td>
-          </tr>
-          <tr>
-            <td class="kep">...</td>
-            <td class="nev">Láthatatlan E-nyíró</td>
-            <td class="tipus">Elektromos (kézi)</td>
-            <td class="marka">Magic fűnyíró kft 2.0</td>
-            <td class="vagoszelesseg">2 cm</td>
-            <td class="teljesitmeny">10 W</td>
-            <td class="suly">1 kg</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp" style="text-align: center">
-    Készítette: RookieDev Team
-    2016
-  </div>
 </div>

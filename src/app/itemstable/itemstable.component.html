@@ -1,0 +1,29 @@
+		<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp width-to-100percent mowers">
+			<thead>
+				<tr>
+					<th class="images_onsite">Kép</th>
+          <th class="brand_of_item">Márka</th>
+					<th class="name_of_item">Név</th>
+					<th class="type_of_item">Típus</th>
+					<th class="cutting_width">Vágószélesség</th>
+					<th class="power_HP">Teljesítmény</th>
+					<th class="weight_kg">Súly</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let mower of mowers" [class.selected]="mower === selectedMower" (click)="onSelect(mower)">
+					<td>{{mower.image_of}}</td>
+          <td>{{mower.brandof_mower}}</td>
+					<td>{{mower.name}}</td>
+          <td>{{mower.typeof_mower}}</td>
+          <td>{{mower.cutting_width_cm}}</td>
+          <td>{{mower.performance_in_hp}}</td>
+          <td>{{mower.weight_in_kg}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<br>
+
+		<my-mower-detail [mower]="selectedMower"></my-mower-detail>
