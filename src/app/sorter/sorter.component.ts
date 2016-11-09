@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sorter.component.html',
   styleUrls: ['./sorter.component.css']
 })
+
 export class SorterComponent implements OnInit {
 
   constructor() { }
