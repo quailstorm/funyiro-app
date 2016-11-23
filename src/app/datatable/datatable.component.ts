@@ -19,7 +19,7 @@ export class DatatableComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.http.get("app/datatable/data.json")
+        this.http.get("./app/datatable/data.json")
             .subscribe((data)=> {
                 setTimeout(()=> {
                     this.data = data.json();
