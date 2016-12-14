@@ -17,6 +17,7 @@ import { OldfooterComponent } from './oldfooter/oldfooter.component';
 import { SorterComponent } from './sorter/sorter.component';
 import { ItemstableComponent } from './itemstable/itemstable.component';
 import { DatatableComponent } from './datatable/datatable.component';
+import { ItemscreenComponent } from './itemscreen/itemscreen.component';
 import { DatatableModule } from './datatable/datatable.module';
 
 @NgModule({
@@ -27,7 +28,8 @@ import { DatatableModule } from './datatable/datatable.module';
     FilterComponent,
     OldfooterComponent,
     SorterComponent,
-    ItemstableComponent
+    ItemstableComponent,
+    ItemscreenComponent
   ],
   imports: [
     BrowserModule,

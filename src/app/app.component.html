@@ -2,23 +2,28 @@
 
 	<app-pageheader class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp"></app-pageheader>
 
-	<app-filter class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp pad-to-15px"></app-filter>
+	<app-filter class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp pad-to-15px"
+	(value)="filter.mowerBrand=$event" (typevalue)="filter.mowerType=$event" (colorvalue)="filter.mowerColor=$event" (weightvalue)="filter.mowerWeight=$event" (perfvalue)="filter.mowerPerf=$event" (cutwidthvalue)="filter.mowerCutwidth=$event"></app-filter>
 
 	<div class="mdl-cell mdl-cell--9-col">
-
+	<!--
 		<app-sorter class="mdl-cell--no-spacing mdl-cell--12-col mdl-card mdl-shadow--2dp pad-to-15px width-to-100percent"></app-sorter>
 
 		<br>
 
-		<app-itemstable class="mdl-cell--no-spacing mdl-cell--12-col"></app-itemstable>
+		<app-itemstable class="mdl-cell--no-spacing mdl-cell--12-col"></app-itemstable> -->
+
+		<app-datatable [LeftFilter]="filter"></app-datatable>
 
 	</div>
 
 	<app-oldfooter class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp oldfooter"></app-oldfooter>
 
+	<app-itemscreen class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp oldfooter"></app-itemscreen>
+
 <br>
 
-	<app-datatable></app-datatable>
+	
 
 </div>
 

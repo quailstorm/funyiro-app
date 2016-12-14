@@ -8,4 +8,5 @@ export class Mower {
     weight_in_kg: number;
     performance_in_hp: number;
     cutting_width_cm: number;
+    description: string;
 }

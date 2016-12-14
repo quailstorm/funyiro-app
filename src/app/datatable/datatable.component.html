@@ -1,14 +1,15 @@
 <div class="container-fluid">
-  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+  <div class="col-xs-12 col-md-12 col-lg-12">
 
+<!--
     <div class="row">
       <h2 class="col-xs-6">Adattábla</h2>
       <div class="col-xs-2">
         <label class="label-control">Sorok egy oldalon:</label>
         <select class="form-control input-sm" [(ngModel)]="rowsOnPage">
-                    <option [ngValue]="5">5</option>
-                    <option [ngValue]="10">10</option>
-                    <option [ngValue]="15">15</option>
+                    <option [ngValue]="5">10</option>
+                    <option [ngValue]="20">20</option>
+                    <option [ngValue]="30">30</option>
                 </select>
       </div>
       <div class="col-xs-4">
@@ -37,58 +38,73 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="panel panel-default">
-      <div class="panel-heading">Fűnyírólista</div>
+      <div class="panel-heading">Fűnyírók listája</div>
 
-      <table class="table table-striped" [mfData]="data | dataFilter : filterQuery" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage"
+      <table class="table table-striped" [mfData]="data | dataFilter : filterQuery | brandFilter : LeftFilter.brand | typeFilter : LeftFilter.type | colorFilter : LeftFilter.color | weightFilter : LeftFilter.weight | perfFilter : LeftFilter.perf | cutwidthFilter : LeftFilter.cutwidth" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage"
         [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder">
         <thead>
           <tr>
-            <th style="width: 15%">
+            <th colspan="8">
+              Szűrés névre:
+              <input class="form-control" [(ngModel)]="filterQuery" />
+              <!--<input class="form-control" [(ngModel)]="weightfilterQuery"/>
+              Szűrés márkára:
+              <input class="form-control" [(ngModel)]="brandfilterQuery"/>
+              <input class="form-control"  [value]="LeftFilter.brand"/>-->
+            </th>
+          </tr>
+
+          <tr>
+            <th class="column-image">
+              Kép
+            </th>
+            <th class="column-brand">
               <mfDefaultSorter by="brandof_mower">Márka</mfDefaultSorter>
             </th>
-            <th style="width: 25%">
+            <th class="column-name">
               <mfDefaultSorter by="name">Név</mfDefaultSorter>
             </th>
-            <th style="width: 20%">
+            <th class="column-type">
               <mfDefaultSorter by="typeof_mower">Típus</mfDefaultSorter>
             </th>
-            <th style="width: 10%">
+            <th class="column-color">
               <mfDefaultSorter by="color_of">Szín</mfDefaultSorter>
             </th>
-            <th style="width: 10%" class="text-right">
+            <th class="column-cutting-width text-right">
               <mfDefaultSorter by="cutting_width_cm">Vágószélesség</mfDefaultSorter>
             </th>
-            <th style="width: 10%" class="text-right">
+            <th class="column-weight text-right">
               <mfDefaultSorter by="weight_in_kg">Súly</mfDefaultSorter>
             </th>
-            <th style="width: 10%" class="text-right">
+            <th class="column-performance text-right">
               <mfDefaultSorter by="performance_in_hp">Teljesítmény</mfDefaultSorter>
             </th>
           </tr>
-          <tr>
+          <!--<tr>
             <th colspan="5">
               Szűrés névre:
               <input class="form-control" [(ngModel)]="filterQuery" />
             </th>
-          </tr>
+          </tr> -->
         </thead>
         <tbody>
           <tr *ngFor="let item of mf.data">
-            <td>{{item.brandof_mower}}</td>
-            <td>{{item.name}}</td>
-            <td>{{item.typeof_mower}}</td>
-            <td>{{item.color_of}}</td>
-            <td class="text-right">{{item.cutting_width_cm}} cm</td>
-            <td class="text-right">{{item.weight_in_kg}} kg</td>
-            <td class="text-right">{{item.performance_in_hp}} LE</td>
+            <td class="column-image"><img height="64" src="{{item.image_of}}" /></td>
+            <td class="column-brand">{{item.brandof_mower}}</td>
+            <td class="column-name" >{{item.name}}</td>
+            <td class="column-type" >{{item.typeof_mower}}</td>
+            <td class="column-color">{{item.color_of}}</td>
+            <td class="text-right column-cutting-width">{{item.cutting_width_cm}} cm</td>
+            <td class="text-right column-weight">{{item.weight_in_kg}} kg</td>
+            <td class="text-right column-performance">{{item.performance_in_hp}} LE</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="5">
-              <mfBootstrapPaginator [rowsOnPageSet]="[5,10,15]" class="pagination_buttons"></mfBootstrapPaginator>
+            <td colspan="8">
+              <mfBootstrapPaginator [rowsOnPageSet]="[10,20,30]" class="pagination_buttons"></mfBootstrapPaginator>
             </td>
           </tr>
         </tfoot>

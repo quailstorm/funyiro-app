@@ -5,7 +5,7 @@ h1 {
   font-size: 250%;
 }
 h2, h3 {
-  color: #444;
+  color: #333;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
@@ -13,7 +13,7 @@ body {
   margin: 2em;
 }
 body, input[text], button {
-  color: #888;
+  color: #666;
   font-family: Cambria, Georgia;
 }
 a {
@@ -22,7 +22,7 @@ a {
 }
 button {
   font-family: Arial;
-  background-color: #eee;
+  background-color: #ddd;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
@@ -157,4 +157,154 @@ can be found in the LICENSE file at http://angular.io/license
     text-decoration: none;
     background-color: #fff;
     border: 1px solid #ddd;
+}
+
+.panel-heading {
+  color: #559ad7;
+}
+
+.table-header {
+  color: #559ad7;
+}
+
+.column-image {
+  width: 10%;
+}
+
+.column-brand {
+  width: 16%;
+}
+
+.column-name {
+  width: 22%;
+}
+
+.column-type {
+  width: 16%;
+}
+
+.column-color {
+  width: 9%;
+}
+
+.column-cutting-width {
+  width: 9%;
+}
+
+.column-weight {
+  width: 9%;
+}
+
+.column-performance {
+  width: 9%;
+}
+
+@media only screen and (min-width: 240px) {
+  .column-image {display: none}
+  .column-brand {display: none}
+  .column-name {display: table-cell}
+  .column-type {display: none}
+  .column-color {display: none}
+  .column-cutting-width {display: none}
+  .column-weight {display: none}
+  .column-performance {display: none}
+}
+
+@media only screen and (min-width: 320px) {
+  .column-image {display: none}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: none}
+  .column-color {display: none}
+  .column-cutting-width {display: none}
+  .column-weight {display: none}
+  .column-performance {display: none}
+}
+
+@media only screen and (min-width: 425px) {
+  .column-image {display: none}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: table-cell}
+  .column-color {display: none}
+  .column-cutting-width {display: none}
+  .column-weight {display: none}
+  .column-performance {display: none}
+}
+
+@media only screen and (min-width: 496px) {
+  .column-image {display: none}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: table-cell}
+  .column-color {display: none}
+  .column-cutting-width {display: table-cell}
+  .column-weight {display: none}
+  .column-performance {display: none}
+}
+
+@media only screen and (min-width: 680px) {
+  .column-image {display: table-cell}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: table-cell}
+  .column-color {display: none}
+  .column-cutting-width {display: table-cell}
+  .column-weight {display: none}
+  .column-performance {display: none}
+}
+
+@media only screen and (min-width: 772px) {
+  .column-image {display: table-cell}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: table-cell}
+  .column-color {display: none}
+  .column-cutting-width {display: table-cell}
+  .column-weight {display: none}
+  .column-performance {display: table-cell}
+}
+
+@media only screen and (min-width: 840px) {
+  .column-image {display: none}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: table-cell}
+  .column-color {display: none}
+  .column-cutting-width {display: table-cell}
+  .column-weight {display: none}
+  .column-performance {display: table-cell}
+}
+
+@media only screen and (min-width: 1024px) {
+  .column-image {display: table-cell}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: table-cell}
+  .column-color {display: none}
+  .column-cutting-width {display: table-cell}
+  .column-weight {display: none}
+  .column-performance {display: table-cell}
+}
+
+@media only screen and (min-width: 1160px) {
+  .column-image {display: table-cell}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: table-cell}
+  .column-color {display: none}
+  .column-cutting-width {display: table-cell}
+  .column-weight {display: table-cell}
+  .column-performance {display: table-cell}
+}
+
+@media only screen and (min-width: 1224px) {
+  .column-image {display: table-cell}
+  .column-brand {display: table-cell}
+  .column-name {display: table-cell}
+  .column-type {display: table-cell}
+  .column-color {display: table-cell}
+  .column-cutting-width {display: table-cell}
+  .column-weight {display: table-cell}
+  .column-performance {display: table-cell}
 }

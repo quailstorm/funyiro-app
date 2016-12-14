@@ -1,6 +1,6 @@
- <div>
-    <div class="text-1">Szűrők</div>
-
+<div>
+  <div class="text-1">Szűrők</div>
+  <!--
     <form>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
         <label class="mdl-button mdl-js-button mdl-button--icon" for="textFieldSearch">
@@ -12,83 +12,157 @@
         </div>
       </div>
     </form>
+-->
+  <br>
 
-    <!-- TÍPUS -->
-    <div class="text-2">Típus</div>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_pushmover_petrol">
-        <input type="checkbox" id="type_pushmover_petrol" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Benzines (kézi)</span>
+  <!-- TÍPUS -->
+  <div class="text-2">Típus</div>
+
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type_delete">
+        <input #type0 type="radio" id="type_delete" name="typefilter" class="mdl-radio__button" value="0" (change)="sendTypeEmpty()">
+        <span class="mdl-radio__label">Filter törlése</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type_pushmover_petrol">
+        <input #type1 type="radio" id="type_pushmover_petrol" name="typefilter" class="mdl-radio__button" value="benzines" (change)="sendType(type1)">
+        <span class="mdl-radio__label">Benzines (kézi)</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type_pushmover_electric">
+        <input #type2 type="radio" id="type_pushmover_electric" name="typefilter" class="mdl-radio__button" value="elektromos" (change)="sendType(type2)">
+        <span class="mdl-radio__label">Elektromos (kézi)</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type_trimmer_edger">
+        <input #type3 type="radio" id="type_trimmer_edger" name="typefilter" class="mdl-radio__button" value="fűkasza" (change)="sendType(type3)">
+        <span class="mdl-radio__label">Fűkasza</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type_rideon_tractor">
+        <input #type4 type="radio" id="type_rideon_tractor" name="typefilter" class="mdl-radio__button" value="fűnyíró traktor" (change)="sendType(type4)">
+        <span class="mdl-radio__label">Fűnyíró traktor</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="type_robot">
+        <input #type5 type="radio" id="type_robot" name="typefilter" class="mdl-radio__button" value="fűnyíró robot" (change)="sendType(type5)">
+        <span class="mdl-radio__label">Fűnyíró robot</span>
       </label>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_pushmover_electric">
-        <input type="checkbox" id="type_pushmover_electric" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Elektromos (kézi)</span>
+  <!-- MÁRKA -->
+  <div class="text-2">Márka</div>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_0">
+        <input #brand0 type="radio" id="brand_of_item_0" name="brandfilter" class="mdl-radio__button" value="0" (change)="sendBrandEmpty()">
+        <span class="mdl-radio__label">Filter törlése</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_1">
+        <input #brand1 type="radio" id="brand_of_item_1" name="brandfilter" class="mdl-radio__button" value="MTD" (change)="sendBrand(brand1)">
+        <span class="mdl-radio__label">MTD</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_2">
+        <input #brand2 type="radio" id="brand_of_item_2" name="brandfilter" class="mdl-radio__button" value="HECHT" (change)="sendBrand(brand2)">
+        <span class="mdl-radio__label">HECHT</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_3">
+        <input #brand3 type="radio" id="brand_of_item_3" name="brandfilter" class="mdl-radio__button" value="AL-KO" (change)="sendBrand(brand3)">
+        <span class="mdl-radio__label">AL-KO</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_4">
+        <input #brand4 type="radio" id="brand_of_item_4" name="brandfilter" class="mdl-radio__button" value="McCULLOCH" (change)="sendBrand(brand4)">
+        <span class="mdl-radio__label">McCULLOCH</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_5">
+        <input #brand5 type="radio" id="brand_of_item_5" name="brandfilter" class="mdl-radio__button" value="Agrimotor" (change)="sendBrand(brand5)">
+        <span class="mdl-radio__label">Agrimotor</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_6">
+        <input #brand6 type="radio" id="brand_of_item_6" name="brandfilter" class="mdl-radio__button" value="Husqvarna" (change)="sendBrand(brand6)">
+        <span class="mdl-radio__label">Husqvarna</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_7">
+        <input #brand7 type="radio" id="brand_of_item_7" name="brandfilter" class="mdl-radio__button" value="GreenWorks" (change)="sendBrand(brand7)">
+        <span class="mdl-radio__label">GreenWorks</span>
+      </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="brand_of_item_8">
+        <input #brand8 type="radio" id="brand_of_item_8" name="brandfilter" class="mdl-radio__button" value="Ryobi" (change)="sendBrand(brand8)">
+        <span class="mdl-radio__label">Ryobi</span>
       </label>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_trimmer_edger">
-        <input type="checkbox" id="type_trimmer_edger" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Fűkasza</span>
-      </label>
+  <!-- SZÍN -->
+  <div class="text-2">Szín</div>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="color_0">
+      <input #color0 type="radio" id="color_0" name="colorfilter" class="mdl-radio__button" value="0" (change)="sendColorEmpty()">
+      <span class="mdl-radio__label">Filter törlése</span>
+    </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="color_1">
+      <input #color1 type="radio" id="color_1" name="colorfilter" class="mdl-radio__button" value="ezüst" (change)="sendColor(color1)">
+      <span class="mdl-radio__label">ezüst</span>
+    </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="color_2">
+      <input #color2 type="radio" id="color_2" name="colorfilter" class="mdl-radio__button" value="fehér" (change)="sendColor(color2)">
+      <span class="mdl-radio__label">fehér</span>
+    </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="color_3">
+      <input #color3 type="radio" id="color_3" name="colorfilter" class="mdl-radio__button" value="fekete" (change)="sendColor(color3)">
+      <span class="mdl-radio__label">fekete</span>
+    </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="color_4">
+      <input #color4 type="radio" id="color_4" name="colorfilter" class="mdl-radio__button" value="narancs" (change)="sendColor(color4)">
+      <span class="mdl-radio__label">narancs</span>
+    </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="color_5">
+      <input #color5 type="radio" id="color_5" name="colorfilter" class="mdl-radio__button" value="piros" (change)="sendColor(color5)">
+      <span class="mdl-radio__label">piros</span>
+    </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="color_6">
+      <input #color6 type="radio" id="color_6" name="colorfilter" class="mdl-radio__button" value="sárga" (change)="sendColor(color6)">
+      <span class="mdl-radio__label">sárga</span>
+    </label>
+  <br>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="color_7">
+      <input #color7 type="radio" id="color_7" name="colorfilter" class="mdl-radio__button" value="zöld" (change)="sendColor(color7)">
+      <span class="mdl-radio__label">zöld</span>
+    </label>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_rideon_tractor">
-        <input type="checkbox" id="type_rideon_tractor" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Fűnyíró traktor</span>
-      </label>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="type_robot">
-        <input type="checkbox" id="type_robot" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Fűnyíró robot</span>
-      </label>
+  <!-- VÁGÓSZÉLESSÉG -->
+  <div class="text-2">Vágószélesség</div>
+  <span class="mdl-checkbox__label">Min: 0 Max: 60 Curr: {{cutwidthSliderValue}}</span>
+  <input #ct id="cutting_width" class="mdl-slider mdl-js-slider" type="range" min="0" max="60" tabindex="0" [(ngModel)]="cutwidthSliderValue" (input)="sendCutwidth(ct)">
 
-    <!-- MÁRKA -->
-    <div class="text-2">Márka</div>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="brand_of_item_1">
-        <input type="checkbox" id="brand_of_item_1" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 1</span>
-      </label>
+  <div id="cutting_width" range-slider min="0" max="60"></div>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="brand_of_item_2">
-        <input type="checkbox" id="brand_of_item_2" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 2</span>
-      </label>
+  <!-- TELJESÍTMÉNY -->
+  <div class="text-2">Teljesítmény</div>
+  <span class="mdl-checkbox__label">Min: 0 Max: 20 Curr: {{perfSliderValue}}</span>
+  <input #pf id="performance" class="mdl-slider mdl-js-slider" type="range" min="0" max="20" tabindex="0" [(ngModel)]="perfSliderValue" (input)="sendPerf(pf)">
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="brand_of_item_3">
-        <input type="checkbox" id="brand_of_item_3" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 3</span>
-      </label>
+  <div id="performance" range-slider min="0" max="20"></div>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="brand_of_item_4">
-        <input type="checkbox" id="brand_of_item_4" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 4</span>
-      </label>
+  <!-- SÚLY -->
+  <div class="text-2">Súly</div>
+  <span class="mdl-checkbox__label">Min: 0 Max: 50 Curr: {{weightSliderValue}}</span>
+  <input #wgt id="weight" class="mdl-slider mdl-js-slider" type="range" min="0" max="50" tabindex="0" [(ngModel)]="weightSliderValue" (input)="sendWeight(wgt)">
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="brand_of_item_5">
-        <input type="checkbox" id="brand_of_item_5" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 5</span>
-      </label>
+  <div id="weight" range-slider min="0" max="50"></div>
 
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="brand_of_item_6">
-        <input type="checkbox" id="brand_of_item_6" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">Márka 6</span>
-      </label>
-
-    <!-- VÁGÓSZÉLESSÉG -->
-    <div class="text-2">Vágószélesség</div>
-      <span class="mdl-checkbox__label">Min: 0</span>
-      <input id="cutting_width" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
-
-    <!-- TELJESÍTMÉNY -->
-    <div class="text-2">Teljesítmény</div>
-      <span class="mdl-checkbox__label">Min: 0</span>
-      <input id="cutting_width" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
-
-    <!-- SÚLY -->
-    <div class="text-2">Súly</div>
-      <span class="mdl-checkbox__label">Min: 0</span>
-      <input id="cutting_width" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
-
-    <br>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--raised mdl-button--colored width-to-100percent">
+  <br>
+  <!--
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--raised mdl-button--colored width-to-100percent">
       Szűrés
     </button>
-  </div>
+    -->
+</div>

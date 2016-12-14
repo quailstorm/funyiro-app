@@ -1,0 +1,62 @@
+.mainimage {
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (min-width: 840px) {
+    .mainimage {
+        display: inline;
+        margin: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 840px) {
+    .main-informations {
+        text-align: left;
+    }   
+}
+
+.brand-name {
+    font-size: xx-large;
+    line-height: 250%;
+}
+
+.typeof_mower {
+    font-size: large;
+    line-height: 150%;
+}
+
+.performance {
+    font-size: large;
+    line-height: 150%;
+}
+
+.weight {
+    font-size: large;
+    line-height: 150%;
+}
+
+.cutting_width {
+    font-size: large;
+    line-height: 150%;
+}
+
+.color {
+    line-height: 140%;
+}
+
+.title {
+    font-size: x-large;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 200%;
+    text-align: left;
+}
+
+.description {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 125%;
+    text-align: justify;
+}

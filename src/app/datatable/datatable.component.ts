@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataTableModule } from "angular2-datatable";
 import { Http } from "@angular/http";
+import { FilterBinding } from '../filter-binding-class';
 
 @Component({
   selector: 'app-datatable',
@@ -9,8 +10,12 @@ import { Http } from "@angular/http";
 })
 export class DatatableComponent implements OnInit {
 
+@Input() LeftFilter: FilterBinding;
+
   public data;
     public filterQuery = "";
+    public brandfilterQuery = "";
+    public weightfilterQuery = "";
     public rowsOnPage = 10;
     public sortBy = "id";
     public sortOrder = "asc";
