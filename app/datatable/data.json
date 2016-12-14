@@ -1,431 +1,470 @@
 [
     {
         "id": 1,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/186567652.mtd-smart-46-po.jpg",
         "brandof_mower": "MTD",
         "name": "RF125",
         "typeof_mower": "fűnyíró traktor",
         "color_of": "piros",
         "weight_in_kg": 12,
         "performance_in_hp": 10,
-        "cutting_width_cm": 32
+        "cutting_width_cm": 32,
+        "description": "Gyönyörű piros MTD fűnyíró"
     },
     {
         "id": 2,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/263871903.mtd-46b.jpg",
         "brandof_mower": "MTD",
         "name": "SMART 395 PO",
         "typeof_mower": "benzines",
         "color_of": "piros",
         "weight_in_kg": 9,
         "performance_in_hp": 12,
-        "cutting_width_cm": 41
+        "cutting_width_cm": 41,
+        "description": "Egyszerű benzines fűnyíró"
     },
     {
         "id": 3,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/45777594.mtd-46-spo.jpg",
         "brandof_mower": "MTD",
         "name": "46 S",
         "typeof_mower": "fűnyíró robot",
         "color_of": "piros",
         "weight_in_kg": 17,
         "performance_in_hp": 10,
-        "cutting_width_cm": 23
+        "cutting_width_cm": 23,
+        "description": "Egy robot? Nagyszerű!"
     },
     {
         "id": 4,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/45777667.mtd-395-po.jpg",
         "brandof_mower": "MTD",
         "name": "Minirider 60",
         "typeof_mower": "fűnyíró traktor",
         "color_of": "piros",
         "weight_in_kg": 7,
         "performance_in_hp": 5,
-        "cutting_width_cm": 50
+        "cutting_width_cm": 50,
+        "description": "A legnagyobb vágószélességű fűnyíró traktor!"
     },
     {
         "id": 5,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/179004937.mtd-smart-42-po.jpg",
         "brandof_mower": "MTD",
         "name": "SMART 42 PO",
         "typeof_mower": "benzines",
         "color_of": "piros",
         "weight_in_kg": 19,
         "performance_in_hp": 11,
-        "cutting_width_cm": 22
+        "cutting_width_cm": 22,
+        "description": "Piros benzines fűnyíró"
     },
     {
         "id": 6,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/186567652.mtd-smart-46-po.jpg",
         "brandof_mower": "MTD",
         "name": "46 PO",
         "typeof_mower": "benzines",
         "color_of": "piros",
         "weight_in_kg": 30,
         "performance_in_hp": 10,
-        "cutting_width_cm": 40
+        "cutting_width_cm": 40,
+        "description": "Hatalmas vágószélességű gyönyörű piros fűnyíró"
     },
     {
         "id": 7,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/300546299.mtd-dl-46-p.jpg",
         "brandof_mower": "MTD",
         "name": "DL 96 T",
         "typeof_mower": "fűnyíró traktor",
         "color_of": "fehér",
         "weight_in_kg": 12,
         "performance_in_hp": 9,
-        "cutting_width_cm": 42
+        "cutting_width_cm": 42,
+        "description": "Könnyű fehér fűnyíró traktor"
     },
     {
         "id": 8,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/304629446.mtd-smart-bc-33.jpg",
         "brandof_mower": "MTD",
         "name": "Smart BC 33",
         "typeof_mower": "fűkasza",
         "color_of": "piros",
         "weight_in_kg": 6.8,
         "performance_in_hp": 4,
-        "cutting_width_cm": 25
+        "cutting_width_cm": 25,
+        "description": "Egy nagyszerű fűkasza!"
     },
     {
         "id": 9,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/304076287.mtd-bc-52.jpg",
         "brandof_mower": "MTD",
         "name": "BC 52",
         "typeof_mower": "fűkasza",
         "color_of": "piros",
         "weight_in_kg": 7.5,
         "performance_in_hp": 4,
-        "cutting_width_cm": 22
+        "cutting_width_cm": 22,
+        "description": "Piros MTD fűkasza a fű kaszálásához!"
     },
     {
         "id": 10,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/180821659.hecht-40.jpg",
         "brandof_mower": "HECHT",
         "name": "Hecht 40",
         "typeof_mower": "benzines",
         "color_of": "piros",
         "weight_in_kg": 40,
         "performance_in_hp": 6,
-        "cutting_width_cm": 40.6
+        "cutting_width_cm": 40.6,
+        "description": "Olcsó benzines fűnyíró"
     },
     {
         "id": 11,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/252372976.hecht-1845.jpg",
         "brandof_mower": "HECHT",
         "name": "Hecht 1845",
         "typeof_mower": "elektromos",
         "color_of": "piros",
         "weight_in_kg": 10,
         "performance_in_hp": 14,
-        "cutting_width_cm": 46
+        "cutting_width_cm": 46,
+        "description": "Az első elektromos HECHT fűnyíró!"
     },
     {
         "id": 12,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/386353059.hecht-543.jpg",
         "brandof_mower": "HECHT",
         "name": "Hecht 543",
         "typeof_mower": "benzines",
         "color_of": "narancs",
         "weight_in_kg": 45,
         "performance_in_hp": 7,
-        "cutting_width_cm": 43
+        "cutting_width_cm": 43,
+        "description": "Szép narancs fűnyíró"
     },
     {
         "id": 13,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/389229636.hecht-1000.jpg",
         "brandof_mower": "HECHT",
         "name": "Hecht 1000",
         "typeof_mower": "elektromos",
         "color_of": "piros",
         "weight_in_kg": 10,
         "performance_in_hp": 10,
-        "cutting_width_cm": 32
+        "cutting_width_cm": 32,
+        "description": "Piros fűnyíró, nagy teljesítménnyel"
     },
     {
         "id": 14,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/386354667.hecht-550-bs.jpg",
         "brandof_mower": "HECHT",
         "name": "Hecht 550 BS",
         "typeof_mower": "benzines",
         "color_of": "piros",
         "weight_in_kg": 16,
         "performance_in_hp": 12,
-        "cutting_width_cm": 51
+        "cutting_width_cm": 51,
+        "description": "Egyszerű, olcsó, szép"
     },
     {
         "id": 15,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/252373002.hecht-547.jpg",
         "brandof_mower": "HECHT",
         "name": "Hecht 547",
         "typeof_mower": "benzines",
         "color_of": "piros",
         "weight_in_kg": 10,
         "performance_in_hp": 12,
-        "cutting_width_cm": 46
+        "cutting_width_cm": 46,
+        "description": "Könnyű, hatékony HECHT fűnyíró"
     },
     {
         "id": 16,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/180821575.hecht-1638.jpg",
         "brandof_mower": "HECHT",
         "name": "Hecht 1638",
         "typeof_mower": "elektromos",
         "color_of": "piros",
         "weight_in_kg": 20,
         "performance_in_hp": 16,
-        "cutting_width_cm": 38
+        "cutting_width_cm": 38,
+        "description": "Erős, elektromos!"
     },
     {
         "id": 17,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/377697975.al-ko-classic-4-66-p-a.jpg",
         "brandof_mower": "AL-KO",
         "name": "Classic 4.66 P-A",
         "typeof_mower": "benzines",
         "color_of": "piros",
         "weight_in_kg": 12,
         "performance_in_hp": 7,
-        "cutting_width_cm": 46
+        "cutting_width_cm": 46,
+        "description": "A legnagyobb vágószélességű AL-KO"
     },
     {
         "id": 18,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/296895661.al-ko-classic-3-85-e.jpg",
         "brandof_mower": "AL-KO",
         "name": "Classic 3.85 E",
         "typeof_mower": "elektromos",
         "color_of": "ezüst",
         "weight_in_kg": 10,
         "performance_in_hp": 10,
-        "cutting_width_cm": 38
+        "cutting_width_cm": 38,
+        "description": "Ritka ezüst fűnyíró!"
     },
     {
         "id": 19,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/44034904.al-ko-silver-comfort-40-e.jpg",
         "brandof_mower": "AL-KO",
         "name": "Comfort 40 E",
         "typeof_mower": "elektromos",
         "color_of": "ezüst",
         "weight_in_kg": 23,
         "performance_in_hp": 14,
-        "cutting_width_cm": 40
+        "cutting_width_cm": 40,
+        "description": "Hatalmas teljesítményű elektromos AL-KO!"
     },
     {
         "id": 20,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/296895629.al-ko-classic-3-25-e.jpg",
         "brandof_mower": "AL-KO",
         "name": "Classic 3.25 E",
         "typeof_mower": "elektromos",
         "color_of": "ezüst",
         "weight_in_kg": 12,
         "performance_in_hp": 10,
-        "cutting_width_cm": 32
+        "cutting_width_cm": 32,
+        "description": "Ezüst csoda!"
     },
     {
         "id": 21,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/297911085.al-ko-highline-525sp.jpg",
         "brandof_mower": "AL-KO",
         "name": "Highline 525SP",
         "typeof_mower": "benzines",
         "color_of": "piros",
         "weight_in_kg": 19,
         "performance_in_hp": 10,
-        "cutting_width_cm": 51
+        "cutting_width_cm": 51,
+        "description": "Izgalmas piros fűnyíró!"
     },
     {
         "id": 22,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/247882926.mcculloch-m53-140w.jpg",
         "brandof_mower": "McCULLOCH",
         "name": "M53",
         "typeof_mower": "benzines",
         "color_of": "fekete",
         "weight_in_kg": 12,
         "performance_in_hp": 7,
-        "cutting_width_cm": 53
+        "cutting_width_cm": 53,
+        "description": "Egy ritka feket McCULLOCH!"
     },
     {
         "id": 23,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/165358586.mcculloch-m46-125r.jpg",
         "brandof_mower": "McCULLOCH",
         "name": "M46-125R",
         "typeof_mower": "benzines",
         "color_of": "fekete",
         "weight_in_kg": 29,
         "performance_in_hp": 14,
-        "cutting_width_cm": 46
+        "cutting_width_cm": 46,
+        "description": "Gyönyörű fekete benzines fűnyíró!"
     },
     {
         "id": 24,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/247882916.mcculloch-m51-125m.jpg",
         "brandof_mower": "McCULLOCH",
         "name": "M51-125M",
         "typeof_mower": "benzines",
         "color_of": "fekete",
         "weight_in_kg": 22,
         "performance_in_hp": 12,
-        "cutting_width_cm": 51
+        "cutting_width_cm": 51,
+        "description": "Olcsó, de jó!"
     },
     {
         "id": 25,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/246810286.mcculloch-m46-125.jpg",
         "brandof_mower": "McCULLOCH",
         "name": "M46-125",
         "typeof_mower": "benzines",
         "color_of": "fekete",
         "weight_in_kg": 20,
         "performance_in_hp": 15,
-        "cutting_width_cm": 46
+        "cutting_width_cm": 46,
+        "description": "Hasznos, hatásos"
     },
     {
         "id": 26,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/247882942.mcculloch-m56-190awfpx.jpg",
         "brandof_mower": "McCULLOCH",
         "name": "M56-190AWFPX",
         "typeof_mower": "benzines",
         "color_of": "fekete",
         "weight_in_kg": 27,
         "performance_in_hp": 13,
-        "cutting_width_cm": 56
+        "cutting_width_cm": 56,
+        "description": "Benzines csoda"
     },
     {
         "id": 27,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/377378257.mcculloch-m46-110r-classic.jpg",
         "brandof_mower": "McCULLOCH",
         "name": "M46-110R CLASSIC",
         "typeof_mower": "benzines",
         "color_of": "ezüst",
         "weight_in_kg": 10,
         "performance_in_hp": 11,
-        "cutting_width_cm": 46
+        "cutting_width_cm": 46,
+        "description": "Nagyteljesítményű könnyű ezüst benzines fűnyíró"
     },
     {
         "id": 28,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/164932994.mcculloch-b28-b.jpg",
         "brandof_mower": "McCULLOCH",
         "name": "B28 B",
         "typeof_mower": "fűkasza",
         "color_of": "fekete",
         "weight_in_kg": 5.4,
         "performance_in_hp": 7,
-        "cutting_width_cm": 20
+        "cutting_width_cm": 20,
+        "description": "Legkönnyebb fűkasza!"
     },
     {
         "id": 29,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/316252579.agrimotor-kk4015.jpg",
         "brandof_mower": "Agrimotor",
         "name": "KK4015",
         "typeof_mower": "elektromos",
         "color_of": "piros",
         "weight_in_kg": 10,
         "performance_in_hp": 10,
-        "cutting_width_cm": 38.5
+        "cutting_width_cm": 38.5,
+        "description": "Agrimotor KK4015, erősebb, mint egy aligátor!"
     },
     {
         "id": 30,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/312779551.agrimotor-fm3813.jpg",
         "brandof_mower": "Agrimotor",
         "name": "FM3813",
         "typeof_mower": "elektromos",
         "color_of": "piros",
         "weight_in_kg": 25,
         "performance_in_hp": 6,
-        "cutting_width_cm": 38
+        "cutting_width_cm": 38,
+        "description": "Szép piros"
     },
     {
         "id": 31,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/306713151.agrimotor-kk3512.jpg",
         "brandof_mower": "Agrimotor",
         "name": "KK3512",
         "typeof_mower": "elektromos",
         "color_of": "piros",
         "weight_in_kg": 20,
         "performance_in_hp": 8,
-        "cutting_width_cm": 35
+        "cutting_width_cm": 35,
+        "description": "Közepes minőségű olcsó Agrimotor fűnyíró"
     },
     {
         "id": 32,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/mid/163833484.husqvarna-545-rx.jpg",
         "brandof_mower": "Husqvarna",
         "name": "545 RX",
         "typeof_mower": "fűkasza",
         "color_of": "piros",
         "weight_in_kg": 8.7,
         "performance_in_hp": 3,
-        "cutting_width_cm": 24
+        "cutting_width_cm": 24,
+        "description": "Könnyű!"
     },
     {
         "id": 33,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/262737327.husqvarna-135r.jpg",
         "brandof_mower": "Husqvarna",
         "name": "135R",
         "typeof_mower": "fűkasza",
         "color_of": "piros",
         "weight_in_kg": 6.8,
         "performance_in_hp": 6,
-        "cutting_width_cm": 26
+        "cutting_width_cm": 26,
+        "description": "Hatásos fűkasza!"
     },
     {
         "id": 34,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/271362323.greenworks-25147.jpg",
         "brandof_mower": "GreenWorks",
         "name": "25147",
         "typeof_mower": "elektromos",
         "color_of": "zöld",
         "weight_in_kg": 15,
         "performance_in_hp": 5,
-        "cutting_width_cm": 40
+        "cutting_width_cm": 40,
+        "description": "Egyszerű elektromos fűnyíró olcsón!"
     },
     {
         "id": 35,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/271362347.greenworks-25237.jpg",
         "brandof_mower": "GreenWorks",
         "name": "25237",
         "typeof_mower": "elektromos",
         "color_of": "zöld",
         "weight_in_kg": 14,
         "performance_in_hp": 8,
-        "cutting_width_cm": 35
+        "cutting_width_cm": 35,
+        "description": "GreenWorks, a zöld!"
     },
     {
         "id": 36,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/190718122.ryobi-rlm5319smeb.jpg",
         "brandof_mower": "Ryobi",
         "name": "RLM5319SMEB",
         "typeof_mower": "benzines",
         "color_of": "sárga",
         "weight_in_kg": 12,
         "performance_in_hp": 6,
-        "cutting_width_cm": 53
+        "cutting_width_cm": 53,
+        "description": "Ritka sárga fűnyíró"
     },
     {
         "id": 37,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/382869045.ryobi-rlm53190sv.jpg",
         "brandof_mower": "Ryobi",
         "name": "RLM53190SV",
         "typeof_mower": "benzines",
         "color_of": "sárga",
         "weight_in_kg": 20,
         "performance_in_hp": 8,
-        "cutting_width_cm": 53
+        "cutting_width_cm": 53,
+        "description": "Ryobi benzines fűnyíró"
     },
     {
         "id": 38,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/221920319.ryobi-rlm5317sme.jpg",
         "brandof_mower": "Ryobi",
         "name": "RLM5317SME",
         "typeof_mower": "benzines",
         "color_of": "sárga",
         "weight_in_kg": 21,
         "performance_in_hp": 11,
-        "cutting_width_cm": 53
+        "cutting_width_cm": 53,
+        "description": "A legjobb Ryobi!"
     },
     {
         "id": 39,
-        "image_of": "kép",
+        "image_of": "https://p1.akcdn.net/thumb/316252135.ryobi-rlm13e33s.jpg",
         "brandof_mower": "Ryobi",
         "name": "RLM13E33S",
         "typeof_mower": "elektromos",
         "color_of": "sárga",
         "weight_in_kg": 15,
         "performance_in_hp": 7,
-        "cutting_width_cm": 33
+        "cutting_width_cm": 33,
+        "description": "A legolcsóbb fűnyíró a Földön!"
     }
 ]
