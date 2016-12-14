@@ -2,13 +2,13 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Mower } from './mower';
 
 @Component({
-  selector: 'app-itemscreen',
+  selector: 'my-itemscreen',
   templateUrl: './itemscreen.component.html',
   styleUrls: ['./itemscreen.component.css']
 })
-export class ItemscreenComponent implements OnInit {
+export class ItemscreenComponentInside implements OnInit {
 
-@Input() mower: Mower;
+@Input() item: Mower;
 
   constructor() { }
 

@@ -1,0 +1,22 @@
+<div *ngIf="item" class="mdl-grid mdl-cell mdl-cell--12-col">
+    
+
+    
+
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card">
+        <img src="{{item.image_of}}" width="144" class="mainimage" />
+    </div>
+    <div class="mdl-cell mdl-cell--9-col mdl-cell--8-col-tablet mdl-cell--4-col-phone main-informations">
+        <div class="brand-name">{{item.brandof_mower}} {{item.name}}</div>
+        <div class="typeof_mower">Típus: {{item.typeof_mower}}</div>
+        <div class="performance">Teljesítmény: {{item.performance_in_hp}} HP</div>
+        <div class="weight">Tömeg: {{item.weight_in_kg}} kg</div>
+        <div class="cutting_width">Vágószélesség: {{item.cutting_width_cm}} cm</div>
+        <div class="color">Szín: {{item.color_of}}</div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <div class="title">Leírás</div>
+        <div class="description">{{item.description}}</div>
+    </div>
+</div>

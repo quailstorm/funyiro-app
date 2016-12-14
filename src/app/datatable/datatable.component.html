@@ -90,7 +90,7 @@
           </tr> -->
         </thead>
         <tbody>
-          <tr *ngFor="let item of mf.data">
+          <tr *ngFor="let item of mf.data" [class.selected]="item === selectedItem" (click)="onSelect(item)">
             <td class="column-image"><img height="64" src="{{item.image_of}}" /></td>
             <td class="column-brand">{{item.brandof_mower}}</td>
             <td class="column-name" >{{item.name}}</td>
@@ -112,3 +112,7 @@
     </div>
   </div>
 </div>
+
+<br>
+
+<my-itemscreen [item]="selectedItem"></my-itemscreen>>
