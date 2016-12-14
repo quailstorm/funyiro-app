@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { DataTableModule } from "angular2-datatable";
 import { Http } from "@angular/http";
 import { FilterBinding } from '../filter-binding-class';
@@ -13,6 +13,8 @@ import { ItemscreenComponentInside } from './itemscreen.component';
 export class DatatableComponent implements OnInit {
 
     @Input() LeftFilter: FilterBinding;
+
+    @Output("mowerobj") mowerValueEvent: EventEmitter<Mower> = new EventEmitter<Mower>();
 
     public data;
     public filterQuery = "";
@@ -37,6 +39,7 @@ export class DatatableComponent implements OnInit {
 
     onSelect(mower: Mower): void {
         this.selectedItem = mower;
+        this.mowerValueEvent.emit(mower);
     }
 
     public toInt(num: string) {

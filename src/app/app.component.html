@@ -13,13 +13,13 @@
 
 		<app-itemstable class="mdl-cell--no-spacing mdl-cell--12-col"></app-itemstable> -->
 
-		<app-datatable [LeftFilter]="filter"></app-datatable>
+		<app-datatable [LeftFilter]="filter" (mowerobj)="nyiro=$event"></app-datatable>
 
 	</div>
 
 	<app-oldfooter class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp oldfooter"></app-oldfooter>
 
-	<app-itemscreen class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp oldfooter"></app-itemscreen>
+	<app-itemscreen class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp oldfooter" [item]="nyiro"></app-itemscreen>
 
 <br>
 

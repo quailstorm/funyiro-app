@@ -10,4 +10,5 @@ import { FilterBinding } from './filter-binding-class';
 })
 export class AppComponent {
   filter: FilterBinding = new FilterBinding();
+  nyiro: Mower = new Mower();
 }

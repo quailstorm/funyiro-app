@@ -8,7 +8,7 @@ import { Mower } from './mower';
 })
 export class ItemscreenComponent implements OnInit {
 
-@Input() mower: Mower;
+@Input() item: Mower;
 
   constructor() { }
 

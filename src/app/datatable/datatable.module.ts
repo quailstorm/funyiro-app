@@ -13,8 +13,6 @@ import { ColorFilterPipe } from './color-filter.pipe';
 import { PerfFilterPipe } from './perf-filter.pipe';
 import { CutwidthFilterPipe } from './cutwidth-filter.pipe';
 
-import { ItemscreenComponentInside } from './itemscreen.component';
-
 @NgModule({
     imports: [
         CommonModule,
@@ -22,7 +20,7 @@ import { ItemscreenComponentInside } from './itemscreen.component';
         FormsModule,
         HttpModule
     ],
-    declarations: [DatatableComponent, DataFilterPipe, BrandFilterPipe, WeightFilterPipe, TypeFilterPipe, ColorFilterPipe, PerfFilterPipe, CutwidthFilterPipe, ItemscreenComponentInside],
+    declarations: [DatatableComponent, DataFilterPipe, BrandFilterPipe, WeightFilterPipe, TypeFilterPipe, ColorFilterPipe, PerfFilterPipe, CutwidthFilterPipe],
     exports: [DatatableComponent]
 })
 
