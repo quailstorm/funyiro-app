@@ -3,7 +3,6 @@ import { DataTableModule } from "angular2-datatable";
 import { Http } from "@angular/http";
 import { FilterBinding } from '../filter-binding-class';
 import { Mower } from './mower';
-import { ItemscreenComponentInside } from './itemscreen.component';
 
 @Component({
     selector: 'app-datatable',
